@@ -1,0 +1,20 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+table {
+    border: 1px solid grey;
+}
+th {
+    background-color: rgb(198, 206, 243);
+    border: 1px solid grey;
+}
+td {
+    border: 1px solid grey;
+}
+.btn {
+margin-left: 120px;
+}
+textarea {
+    width: 98%;
+}
