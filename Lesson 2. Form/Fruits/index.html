@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fruits</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <header>The World Of Fruit</header>
+    <p>Fruit Survey</p>
+        <form action="form.php" method="POST" target="_blank">
+            <table class="table">
+            <tbody>
+              <tr>
+                <td class="first_col">Name</td> 
+                <td class="Second_col"><input type="text" name="Name" autofocus required><td>
+            </tr>
+            <tr>
+                <td class="first_col">Address</td> 
+                <td class="Second_col"><input type="text" name="Address" required><td>
+            </tr> 
+            <tr>
+                <td class="first_col">Email</td> 
+                <td class="Second_col"><input type="email" name="Email" required><td>
+            </tr> 
+            <tr>
+                <td class="first_col">How many pieces of fruit do you eat per day?</td> 
+                <td class="Second_col">
+                    <input type="radio" name="fruit" value="zero" required>0<br>
+                    <input type="radio" name="fruit" value="one">1<br>
+                    <input type="radio" name="fruit" value="two">2<br>
+                    <input type="radio" name="fruit" value="more">More than 2<td>
+           </tr> 
+           <tr>
+                <td class="first_col">My favorite fruit</td> 
+                <td class="Second_col"><select name="fruitlist" multiple required>
+                    <option value="Apple">Apple</option>
+                    <option value="Banana">Banana</option>
+                    <option value="Plum">Plum</option>
+                    <option value="Pomegranate">Pomegranate</option>
+                    <option>Peach</option>
+                </select><td>
+            </tr> 
+            <tr>
+                <td class="first_col">Would you like a brochure?</td> 
+                <td class="Second_col"><input type="checkbox"><td>
+            </tr> 
+            <tr>
+                <td></td>
+                <td><button type="submit" value="send">Submit</button></td>
+            </tr>
+            </tbody>
+        </table>
+        </form> 
+</body>
+</html>
