@@ -1,0 +1,24 @@
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+   list-style-type: square;
+}
+li:nth-child(1){
+   color: rgb(231, 10, 183);
+   font-weight: bold;
+}
+li:nth-child(2){
+   color: rgb(61, 119, 243);
+   font-weight: bold;
+}
+li:nth-child(3){
+   color: rgb(124, 14, 106);
+}
+li:nth-child(4){
+   color: rgb(248, 176, 41);
+}
+li:nth-child(5){
+   color: rgb(7, 109, 29);
+   font-style: italic;
+}

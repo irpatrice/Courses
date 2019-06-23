@@ -1,0 +1,23 @@
+* {
+    font-size: 160px;
+    text-align: center;
+    text-transform: uppercase;
+ }
+ 
+ body {
+    background-color: #ed7eaf;
+ }
+ .par {
+    width: 530px;
+    height: 400px;
+    color: white;
+    margin: 0 auto;
+    letter-spacing: -10px;
+    word-spacing: 0.001rem;
+    text-shadow: 4px 4px 0px #000000, 9px 6px 0px #1cd47e, -6px -5px 0px #1cd47e, -5px 5px 0px #1cd47e, 8px -5px 0px #1cd47e, -4px 10px 0px #e87314, 5px 12px 0px #e87314;
+ }
+ p  {
+   font-family: 'Chau Philomene One', sans-serif;
+   font-style: italic;
+   font-weight: bold;
+ }

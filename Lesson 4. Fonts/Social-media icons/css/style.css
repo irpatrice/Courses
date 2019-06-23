@@ -1,0 +1,19 @@
+.fa-facebook-square:hover {
+    color: #3b5998;
+ }
+ 
+ .fa-pinterest-square:hover {
+    color: #c8232c;
+ }
+ 
+ .fa-instagram:hover {
+    color: #833AB4;
+ }
+ 
+ .fa-youtube:hover {
+    color: #c4302b;
+ }
+ 
+ a {
+    color: grey;
+ }

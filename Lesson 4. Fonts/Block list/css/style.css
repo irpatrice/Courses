@@ -1,0 +1,17 @@
+div{
+    width: 700px;
+    height: 500px;
+ }
+ ul li{
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    padding-top: 15px;
+    width: 180px;
+    height: 30px;
+    background: rgb(234, 236, 233);
+    text-align: center;
+ }
+ li:nth-child(3), li:nth-child(4n+3){
+    background: rgb(200, 253, 200);
+ }
+ 
