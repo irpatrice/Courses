@@ -1,0 +1,9 @@
+ul {
+    list-style: none;
+    line-height: 1.5;
+}
+li:before {
+    content: "►";
+    color: rgb(234, 0, 255);
+    font-size: 12px;
+}
