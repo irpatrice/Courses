@@ -1,0 +1,71 @@
+body {
+    margin: 0 auto;
+    background-color: rgb(54, 54, 54);
+}
+.container {
+    background-color: white;
+    height: 490px;
+    width: 960px;
+    margin: 30px auto;
+}
+.box {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    background-image: url("../Images/Bkgd.png");
+    background-size: 105%;
+    height: 420px;
+    width: 870px;
+    margin: 35px 45px 35px 45px;
+    color: white;
+ }
+h1 {
+    text-align: center;
+}
+p {
+    text-align: center;
+    font-weight: 100;
+    color: rgb(155, 151, 151);
+    font-size: 12px;
+}
+.smallbox {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    height: 150px;
+    width: 160px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.photo {
+    margin: 0 40px 0 40px;;
+    height: 50%;
+    width: 50%;
+}
+h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+}
+#button {
+    margin: 5px 440px 0px 360px;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(51, 1, 51), rgb(177, 3, 177));
+    height: 30px;
+    width: 130px;
+    border: none;
+}
+#button a {
+    color: rgb(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 12px;
+}
+.smallbox p {
+    font-size: 12px;
+    color: rgb(155, 151, 151);
+}
+.linebox {
+    display: inline-flex;
+    justify-content: center;
+}

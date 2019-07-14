@@ -1,0 +1,85 @@
+body {
+    background-color: gainsboro;
+}
+.container, .box, .main {
+    display: flex;
+}
+.container {
+    margin: 20px auto;
+    height: 500px;
+    width: 900px;
+    background-color: white;
+}
+.box {
+    background-image: url("../images/Multiply.png"), url("../images/Photo.png");
+    background-size: 100%;
+    margin: 30px 40px;
+    width: 840px;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.main, .text, .button, .down {
+    align-self: center;
+}
+.main {
+    justify-content: space-between;
+    width: 600px;
+    align-content: center;
+}
+.text {
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+#big {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 0;
+}
+#small {
+    margin-top: 0px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.6);
+}
+span {
+    font-weight: bold;
+    color:white;
+}
+i{
+    border: solid rgba(255, 255, 255, 0.4);
+    border-width: 0 1px 1px 0;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    top: 20px;
+}
+.left{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.right{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.button {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+#btn {
+    height: 30px;
+    width: 110px;
+    background-color: transparent;
+    border-radius: 30px;
+    color: white;
+}
+.down{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 5px;
+    height: 5px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 50px;
+}

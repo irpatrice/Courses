@@ -1,0 +1,46 @@
+.container {
+    position: relative;
+    margin: 10px auto;
+    border: 1px solid black;
+    height: 350px;
+    width: 900px;
+    box-sizing: border-box;
+}
+.box {
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding-top: 25px;
+}
+#first {
+    background-color: red;
+    margin-left: 120px;
+}
+#second {
+    background-color: rgb(85, 6, 6);
+}
+#third {
+    background-color: rgb(80, 12, 80);
+}
+#fourth {
+    background-color: green;
+}
+#first:hover {
+    background-color: coral;
+}
+#second:hover {
+    background-color: darksalmon;
+}
+#third:hover {
+    background-color: cornflowerblue;
+}
+#fourth:hover {
+    background-color: aquamarine;
+}

@@ -1,3 +1,4 @@
+
 1. За допомогою шрифта font awesome вивести іконки сервісів
 (facebook, youtube, instagram, pinterest)
 і зробити силки на їх головні сторінки.

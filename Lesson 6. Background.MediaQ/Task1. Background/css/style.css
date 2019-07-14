@@ -1,0 +1,14 @@
+body {
+    background-image: url(../images/background.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    /* opacity: 0.4 ;  */ /*Якщо добавити прозорість, то текст також стає прозорим*/
+  }
+div {
+    display: block;
+    box-sizing: border-box;
+    margin: -7px;
+    width: 101%;
+    height: 100%;
+    padding: 10px 20px 10px;
+}
