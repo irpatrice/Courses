@@ -1,0 +1,111 @@
+body{
+    margin: 40px;
+    font-family: "Dejavu sans", Verdana, Geneva, Tahoma, sans-serif;
+    }
+#box {
+    position: relative;
+    width: 80%;
+    height: 530px;
+    border: 1px solid black;
+    background: rgb(68, 68, 68);
+    margin: auto;
+}
+.inner_box {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    margin: 35px 15px 15px 20px;
+    width:28%;
+    height: 460px;
+    border-collapse: collapse;
+}
+.inner_box:first-of-type {
+    margin-left: 46px;
+}
+.header {
+    height: 60px;
+    background-color: rgb(43, 161, 207);
+    color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.header div {
+    display: inline-block;
+    box-sizing: border-box;
+}
+.package_list {
+    background-color: white;
+    height: 400px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.left_col {
+    width: 56%;
+    padding-left: 30px;
+}
+.left_col :first-child {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    vertical-align: bottom;
+    text-transform: uppercase;
+}
+.left_col :last-child {
+    font-size: 20px;
+    margin-top: 3px;
+    font-weight: 400;
+}
+.middle_col {
+    width: 18%;
+    font-size: 36px;
+    text-align: right;
+    font-weight: bold;
+}
+.right_col {
+    width: 20%;
+    font-size: 12px;
+}
+.package_list p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.package_list p:last-of-type{
+    margin-bottom: 20px;
+}
+.package_list :first-child {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+.dashed_line {
+    width: 55%;
+    height: 0px;
+    border-bottom: 1px dashed black;
+    margin-left: 68px;
+}
+#last_line_2 {
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 33px;
+}
+#last_line_3 {
+    font-weight: bold;
+    margin-top: 62px;
+    margin-bottom: 33px;
+}
+button {
+    background: rgb(55, 173, 55);
+    color: white;
+    border-collapse: collapse;
+    border: 0px;
+    width: 220px;
+    height: 40px;
+    border-radius: 8px;
+    margin-left: 42px;
+    font-size: 15px;
+}
+button:hover {
+    background-color: green;
+    cursor: pointer;
+}

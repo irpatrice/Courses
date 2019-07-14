@@ -1,0 +1,104 @@
+body {
+    margin: 0px;
+    color: white;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrap {
+    width: 960px;
+}
+header {
+    height: 62px;
+    background-color: #bfd9bf;
+}
+header p, .sidebar :last-child, .sidebar :nth-child(2), aside nav,.content :nth-child(2), .content :nth-child(3), .content :last-child {
+    font-size: 18px;
+}
+header p, #top_navigation p {
+    margin: 0px;
+}
+header p::after {
+    content: '<header></header>';
+}
+#top_navigation p::after, header p::after, #sidebar_code::after, #content_code::after,#aside_code::before, #footer_code::after {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#top_navigation p::after {
+    content: "<nav></nav>";
+}
+#top_navigation {
+    height: 50px;
+    background-color: #62c362;
+    font-size: 12px;
+}
+.sidebar, .content, aside {
+    height: 495px;
+    float: left;
+}
+.sidebar, aside {
+    width: 20%;
+    background-color: #4d76f1;
+}
+#sidebar_code::after {
+    content: '<section id="sidebar"></section>';
+    text-align: left;
+    margin-left: 0px;
+}
+#sidebar_code {
+    display: block;
+    width: 60%;
+    line-height: 1.5em;
+    padding-left: 20px;
+    margin-bottom: 60px;
+}
+.sidebar :last-child, .sidebar :nth-child(2), aside nav {
+    width: 80%;
+    padding-left: 10px;
+    font-weight: 500;
+    margin: 0px;
+    margin-bottom: 0px;
+} 
+a {
+    color: white;
+    width: 100%;
+}
+.content {
+    width: 60%;
+    background-color: #b3c6ff;
+}
+#content_code::after {
+    content: '<section id="content"></section>';
+}
+#content_code {
+    padding-left: 25px;
+    margin-bottom: 120px;
+}
+.content span {
+    text-decoration: underline;
+}
+.content :nth-child(2), .content :nth-child(3), .content :last-child {
+    font-weight: 500;
+    padding-left: 40px;
+}
+#aside_code::before {
+    content: '<aside></aside>';
+}
+#aside_code {
+    margin-bottom: 120px;
+}
+aside nav {
+    margin-left: 15px;
+}
+footer {
+    background-color: #8fbc8f; 
+    clear: both;
+    height: 50px;
+}
+#footer_code::after {
+    content: '<footer></footer>';
+}
+#footer_code {
+    font-size: 12px;
+}
