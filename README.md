@@ -7,11 +7,11 @@
 
 **Html:**
 	
-	*Lesson 1*
+	Lesson 1
 
 		1. Word list / File name: List
 	
-	*Lesson 2. Form*
+	Lesson 2. Form
 		
 		1. Form about fruits // File name: Fruits
 
@@ -21,13 +21,13 @@
 
 **Css:**
 
-	*Lesson 3. Css selectors*
+	Lesson 3. Css selectors
 
 		1. Text "Lorem ipsum", font: Montserrat (Google fonts),
 		font-size: 1.5, font-weight: medium, line-hight: 1.4, letter-spacing: 0.05em, text-align: justify, last line: text-align: right and font color is green.
 		 // File name: Lorem_Fonts
 	
-	*Lesson 4. Fonts*
+	Lesson 4. Fonts
 
 		1. Text "Lorem ipsum" in brackets. Font: Roboro, 20px, uppercase.
 		Brackets: font Lato, font-size: 30px, different color.
@@ -46,7 +46,7 @@
 		5. Without naming a list items with a css class, make a list of blocks in three lines with an order number inside, where the 3 and 7 will be green and the other - grey. li should be: display: inline-block; margin:0 5px 5px 0 
 		// File name: Block list
 	
-	*Lesson 5: Boxmodel*
+	Lesson 5: Boxmodel
 		
 		1. Make an unordered list. Use a pseudo class before to change markers into violet triangles.
 		//File name: List with triangles
@@ -57,7 +57,7 @@
 		4. Make triangles with different angles as on the template using css.
 		//File name: Triangles
 		
-	*Lesson 5.1. Position, float*
+	Lesson 5.1. Position, float
 	
 		1. Repeat the template of a site layout using float.
 		//File name: Site_layout
@@ -68,7 +68,7 @@
 		4. Repeat the template: https://drive.google.com/open?id=12XiUYyEGdMQ4sCFrS_uWcnOiHa-GYx1t
 		//File name: Quote
 		
-	*Lesson 6. Background. MediaQ*
+	Lesson 6. Background. MediaQ
 	
 		1. Make a block for a full screen with background for a full screen.
 		//File name: Task1. Background
@@ -76,7 +76,7 @@
 		//File name: Cubes
 		3. Repeat the template: https://drive.google.com/open?id=12GCl1k9e5jHoxwAFal6ve2KoMFYS6Ont
 		//File name: About us
-	*Lesson 7. Columns. Flexbox*
+	Lesson 7. Columns. Flexbox
 		1. Repeat the template (flexbox)
 		2. Repeat the template: https://drive.google.com/open?id=1blrNV56O2UWIK8Om_wbRy3knAQMBx1Ah
 		//File name: Nothern Lights
@@ -85,7 +85,7 @@
 		
 _________________________________
 
-	*Lesson 11. JS basic*
+	Lesson 11. JS basic
 	
 		1. Make a variable 'name' with your name and varible 'student'. Then asign 'student' your name.
 		2. 11%2, 36%3
