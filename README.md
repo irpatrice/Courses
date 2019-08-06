@@ -76,12 +76,21 @@
 		//File name: Cubes
 		3. Repeat the template: https://drive.google.com/open?id=12GCl1k9e5jHoxwAFal6ve2KoMFYS6Ont
 		//File name: About us
+		
 	Lesson 7. Columns. Flexbox
 		1. Repeat the template (flexbox)
 		2. Repeat the template: https://drive.google.com/open?id=1blrNV56O2UWIK8Om_wbRy3knAQMBx1Ah
 		//File name: Nothern Lights
 		3. Make the site using flex as on the example: https://drive.google.com/open?id=1tBLLC58aoUDGZZGqgAmM87s-5iR9qsvJ
 		//File name: Contact
+		
+	Lesson 8. Bootstrap
+		
+	Lesson 9. SCSS
+		1. Repeat the template using SCSS (3 plans of some service with pricing): https://goo.gl/PECY7w
+		//File name: Lesson 9. SCSS
+		
+	Lesson 10. CSS: npm, git
 		
 _________________________________
 
