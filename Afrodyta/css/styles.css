@@ -1,7 +1,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body, #header, #banner, .top_block, .top_center, .top_center_left, #banner_2, .center_navigation,.center, .center div, #bottom_navigation, #sidebar, #social_media {
+body, #header, .head_banner, .top_sidebar, #banner, .top_block, .top_center, .top_center_left, #banner_2, .center_navigation,.center, .center div, #bottom_navigation, #sidebar, #social_media {
     display:flex;
 }
 .wrap {
@@ -33,8 +33,12 @@ body, #banner, #social_media, #banner_2, .center div {
     margin-right: 20px;
 }
 /* .navbar a:hover -  не працює */
-nav a:hover, #bottom_navigation a:hover {
+.navbar a:hover, #bottom_navigation a:hover {
     color: rgb(105, 105, 105);
+}
+.navbar a:hover {
+    border-bottom: 3px solid black;
+    padding-bottom: 5px;
 }
 #logo {
     font-size: 40px;
@@ -61,6 +65,12 @@ nav a:hover, #bottom_navigation a:hover {
     margin-right: 20px;
     float: both;
 } */
+.head_banner {
+    /* flex-direction: row; */
+}
+.top_sidebar {
+    flex-direction: column;
+}
 #banner {
     background-image: url(../Images/Banner/Banner.clean.png);
     background-size: 100%;
@@ -276,7 +286,7 @@ button a, .center_navigation a, #bottom_navigation a, #header a {
     height: 38px;
     margin-left: 20px;
 }
-#social_media a :hover {
+#social_media div :hover {
     color: rgb(131, 26, 131);
 }
 .fa-facebook-square {
