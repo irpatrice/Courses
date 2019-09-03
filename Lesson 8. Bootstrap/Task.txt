@@ -1,0 +1,9 @@
+
+Task 1. Table
+To make a table using bootstrap
+
+Task 2.Flexbox
+Repeat the block as on the example.
+
+Task 3. Piroll website
+Repeat the template of the website using bootstrap
