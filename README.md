@@ -85,7 +85,13 @@
 		//File name: Contact
 		
 	Lesson 8. Bootstrap
-		
+		1. To make a table using bootstrap
+		//File name: Task 1. Table
+		2. Repeat the block as on the example.
+		//File name: Task 2.Flexbox
+		3. Repeat the template of the website using bootstrap: https://drive.google.com/open?id=1tBLLC58aoUDGZZGqgAmM87s-5iR9qsvJ
+		// File name: Task 3. Piroll website
+
 	Lesson 9. SCSS
 		1. Repeat the template using SCSS (3 plans of some service with pricing): https://goo.gl/PECY7w
 		//File name: Lesson 9. SCSS
