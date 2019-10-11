@@ -1,4 +1,4 @@
-body, .header, .top-nav, .top, .top-center, .media-icons, .represant, .design, .our_community article, .our_community, .photo_carousel, .subscribe, .user_email, .footer, .download, .download div, .contain-block, .foot-contain {
+body, .header, .top-nav, .top, .top-center, .media-icons, .represant, .design, .our_community article, .our_community, .photo_carousel, .subscribe, .user_email form, .footer, .download, .download div, .contain-block, .foot-contain {
     display: flex;
 }
 @font-face {
@@ -43,18 +43,37 @@ body {
 }
 
 
-/* HEADER */
+/*------------------------------------- HEADER -----------------------------*/
 .header {
     width: 100%;
     height: 150px;
     background-color: transparent;
     justify-content: center;
     z-index: 10;
-    position: absolute;
+    left: 0;
+    top: 0;
+    position: fixed;
+    align-items: center;
+    transition: .25s;
+}
+.header.active {
+    background-color: rgba(0,0,0, .7);
+    height: 65px;
+    max-width: 100%;
+}
+
+.header.active .top-nav {
+    margin-top: 0;
     align-items: center;
 }
+.header.active .top-nav a{
+    font-size: 14px;
+}
+.header.active .top-nav a.logo img{
+    max-width: 35px;
+}
 .top-nav {
-    width: 80%;
+    width: 1200px;
     justify-content: space-evenly;
     align-items: flex-end; 
     margin-top: 40px;
@@ -67,28 +86,33 @@ body {
 }
 .top-nav a {
     text-decoration: none;
-    /* padding-bottom: -15px; */
     font-size: 16px;
     letter-spacing: 2px;
 }
-/* .logo img{
-    padding-top: 15px ;
-} */
+.logo img{
+    max-width: 55px;
+    height: auto;
+}
+i {
+    font-size: 18px;
+}
 
-/* Section TOP */
+/*--------------------------------------- Section TOP ---------------------*/
 .top {
+    position: relative;
+    max-width: 100%;
     height: 745px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     z-index: 5;
 }
 .top-center {
     flex-direction: column;
     align-items: center;
-    margin-top: 342px;
 }
 .top-center h1 {
     margin: 0px;
@@ -103,11 +127,12 @@ body {
     margin: 25px auto;
 }
 .media-icons {
+    position: absolute;
     margin-bottom: 26px;
     width: 100px;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 221px;
+    bottom: 0px;
 }
 .btn {
     background-color: #16a085;
@@ -118,7 +143,6 @@ body {
     font-size: 12px;
     letter-spacing: 2px;
     outline: none;
-    transition: .25s;
     position: relative;
     overflow: hidden;
 }
@@ -135,36 +159,29 @@ body {
     position: absolute;
     left: -150%;
     top: 0;
-    transition: .85s;
     transform: rotate(-45deg);
 }
 .btn:hover:before {
     left: 150px;
     transition: 0;
+    transition: .85s;
 }
 
-/* Section REPRESANT */
+/*------------------------------------- Section REPRESANT --------------------*/
 .represant {
     width: 100%;
     height: 494px;
     background-color: #f5f6f7;
-    /* background-image: url(../img/section_1/Hand-1.png); */
     flex-wrap: wrap;
     justify-content: center;
-
 }
 .contain-block {
-    width: 85%;
+    max-width: 1200px;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
 }
 .contain-block article {
-    /* width: 433px; */
-    /* margin-left: 128px;
-    margin-top: 113px; */
     width: 45%;
-    /* align-items: center; */
 }
 h3 {
     font-size: 18px;
@@ -173,13 +190,10 @@ h3 {
 }
 .contain-block article p {
     margin: 49px 0px 45px;
-    /* width: 513px; */
-    /* height: 370px; */
     font-size: 12px;
     letter-spacing: 2px;
     line-height: 24px;
     color: #373737;
-    /* font-family: "Gotham Rounded"; */
 }
 .pic {
     height: 100%; 
@@ -195,11 +209,12 @@ h3 {
     max-width: 637px;    
 }
 
-/* Section DESIGN */
+/*---------------------------------- Section DESIGN ------------------*/
 .design {
     height: 558px;
     width: 100%;
     justify-content: center;
+    background-color: rgb(228, 226, 226);
 }
 .image {
     height: 80%;
@@ -207,23 +222,29 @@ h3 {
     background-size: contain;
     background-position: left bottom;
     background-repeat: no-repeat; 
-    margin-top: 110px;;
+    margin-top: 110px;
 }
 .design article {
     width: 40%;
+    position: relative;
 }
 .design article p {
-margin: 44px auto 41px;
-font-size: 12px;
-letter-spacing: 2px;
-line-height: 22px;
-color: #373737;
+    margin: 44px auto 41px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    color: #373737;
 }
 .design article button {
     margin-bottom: 44px;
 }
+.design article span {
+    position: absolute;
+    top: 105%;
+    left: -5px;
+}
 
-/* Section OUR_COMMUNITY */
+/*------------------- Section OUR_COMMUNITY - слайдери з фото -----------------*/
 .our_community {
     width: 100%;
     height: 484px;
@@ -234,15 +255,15 @@ color: #373737;
 }
 .container {
     display: flex;
-    width: 85%;
-    /* margin: 0 auto; */
-    /* padding: 0 65px; */
+    width: 1200px;
+    justify-content: space-between;
 }
 .container article {
-    width: 30%;
+    width: 20%;
     height: 244px;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 .container article img {
     width: 59px;
@@ -250,43 +271,74 @@ color: #373737;
 }
 .our_community h4 {
     font-size: 16px;
-letter-spacing: 2px;
-line-height: 20px;
-color: #373737;
-/* font-family: "Gotham Rounded"; */
-font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 20px;
+    color: #373737;
+    font-weight: bold;
 }
 .our_community p {
     width: 139px;
-    /* width: 177px; */
-height: 177px;
-font-size: 10px;
-letter-spacing: 2px;
-color: #373737;
-/* font-family: "Gotham Rounded"; */
-font-weight: 500;
-text-align: center;
+    height: 177px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #373737;
+    font-weight: 500;
+    text-align: center;
 }
 .photo_carousel {
     position:relative;
-    width: 70%;
-    /* justify-content: space-between; */
+    width: 80%;
+    justify-content: center;
 }
 .photo_carousel span {
     position: absolute;
+    left: 87%;
+    bottom: 110%;
 }
 .slider {
-    width: 100%;
-    height: 100%;
+    max-width: 840px;
+    max-height: 484px;
+    margin: 5px 40%;
 }
-.slider div {
-    height: 45%;
-    width: 45%;
+.arrows, .arr_0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.arrows .next, .arrows .prev, .arr_0 .next, .arr_0 .prev {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    outline: none;
+}
+.arrows .next:before, .arr_0 .next:before {
+    content: "";
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    border-left: 2px solid #373737;
+    border-bottom: 2px solid #373737;
+    transform: rotate(-135deg);
+} 
+.arrows .prev:before, .arr_0 .prev:before {
+    content: "";
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    border-left: 2px solid #373737;
+    border-bottom: 2px solid #373737;
+    transform: rotate(45deg);
+}     
 
-/* Section SUBSCRIBE */
+/*-------------------------------- Section SUBSCRIBE ---------------------*/
 .subscribe {
-    width: 100%;
+    max-width: 100%;
     height: 790px;
     background-size: cover;
     background-position: center;
@@ -294,73 +346,85 @@ text-align: center;
     justify-content: center;
     align-items: center;
 }
+.subscribe > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .subscribe h2 {
     font-size: 24px;
-letter-spacing: 4px;
-color: #ffffff;
-/* font-family: "Gotham Rounded"; */
-font-weight: bold;
+    letter-spacing: 4px;
+    color: #ffffff;
+    font-weight: bold;
 }
 .user_email {
-    height: 61px;
-    width: 345px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-.user_email input {
-    width: 280px;
+.subscribe div form input {
+    width: 281px;
     height: 60px;
-    border-radius: 3px;
+    border-radius: 3px 0px 0px 3px;
     background-color: #ffffff;
     border: none;
-    padding: 0px 0px 0px 20px;
+    padding: 0px 15px;
+    margin-right: 0px;
     letter-spacing: 2px;
     font-size: 16px;
     color: #373737;
-    /* font-family: "Gotham Rounded"; */
     font-weight: 500;
-
 }
-.user_email button {
-    width: 63px;
+.subscribe div form button {
+    width: 64px;
     height: 60px;
-    border-radius: 3px;
+    border-radius: 0px 3px 3px 0px;
     background-color: #16a085;
     color: #ffffff;
     border: none;
+    padding: 0;
 }
 
-/* Section "DOWNLOAD" */
+/*------------------------------- Section "DOWNLOAD" ----------------*/
 
 .download {
+    display: flex;
     height: 398px;
     width: 100%;
     background-color: #f5f6f7;
+    justify-content: center;
+}
+.contain_download {
+    display: flex;
+    max-width: 1200px;
+    height: 100%;
     flex-direction: column;
     align-items: center;
 }
-.download h3 {
+.contain_download h3 {
     font-size: 20px;
     letter-spacing: 3px;
     color: #373737;
-    /* font-family: "Gotham Rounded"; */
     font-weight: bold;
     margin: 90px auto 16px;
 }
-.download p {
-    width: 870px;
+.contain_download p {
+    max-width: 870px;
     margin: 0 auto 45px;
     font-size: 12px;
     letter-spacing: 2px;
     line-height: 22px;
     color: #373737;
-    /* font-family: "Gotham Rounded"; */
     font-weight: 500;
     text-align: center;
 }
-.download div {
+.contain_download div {
     width: 621px;
     justify-content: space-between;
 }
-.download div button {
+.contain_download div button {
     width: 240px;
     height: 56px;
     border: none;
@@ -369,29 +433,23 @@ font-weight: bold;
     font-size: 16px;
     letter-spacing: 2px;
     color: #ffffff;
-    /* font-family: "Gotham Rounded"; */
     font-weight: bold;
 }
 
-/* footer */
+/*------------------------------ FOOTER -----------------------*/
 
 .footer {
     height: 130px;
     width: 100%;
     justify-content: center;
-
 }
 .foot-contain {
-    width: 85%;
+    width: 1200px;
     justify-content: space-between;
     height: 100%;
     align-items: center;
-
 }
 .foot-contain div {
-    /* margin-left: 126px; */
-    /* margin-bottom: 34px; */
-    /* margin-top: 44px;     */
     align-items: center;
 }
 a {
@@ -399,7 +457,6 @@ a {
     font-size: 14px;
     letter-spacing: 2px;
     color: #373737;
-    /* font-family: "Gotham Rounded"; */
     font-weight: bold;   
 }
 a:hover{
@@ -415,48 +472,207 @@ a:hover{
 .footer img {
     height: 53px;
     width: 55px;
-    /* margin-right: 129px; */
-    /* margin-bottom: 34px; */
-    /* margin-top: 44px;     */
+    
 }
 
-@media screen and (max-width:900px){
-    header {
-        height: 200px;  
+@media only screen and (max-width: 1200px){
+.contain-block, .contain_download, .container, .foot-contain {
+    width: 85%;
+}
+.slick-initialized .slick-slide img{
+    max-width: 300px;
+}
+.our_community article {
+    width: 30%;
+    padding-right: 20px;
+}
+.photo_carousel{
+    width: 70%;
+    margin: 0, auto;
+}
+.slider {
+    max-width: 700px;
+}
+    
+}
+@media screen and (max-width: 1100px){
+
+    /*-------------- OUR_COMMUNITY - карусель з картинками------------*/
+.container article {
+    width: 30%;
+}
+.photo_carousel {
+    width: 70%;
+}
+.slick-initialized .slick-slider {
+    justify-content: center;
+}
+.slick-slider {
+    max-width: 650px;
+}
+.slick-initialized .slick-slide img{
+    max-width: 250px;
+}
+.slick-list {
+    max-width: 600px;
+}
+}
+
+@media only screen and (max-width:900px){
+
+/*------------------------------DESIGN --------------------------------*/
+.contain-block .image {
+    width: 40%;
+    margin: 10px 10px 0 10px;
+    align-self: flex-end;
+}
+.contain-block article {
+    width: 60%;
+}
+
+/*----------------- OUR_COMMUNITY - карусель з картинками --------------*/
+.our_community {
+    height: 550px;
+    flex-direction: column;
+}
+.container {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.our_community .container article {
+    width: 100%;
+    text-align: center;
+    padding-right: 0px;
+}
+.photo_carousel {
+    max-width: 100%;
+    margin: 5px auto;
+}
+
+.photo_carousel .slider.slick-initialized.slick-slider {
+    max-width: 95%;
+    justify-content: center;
+    padding: 0;
+}
+
+/*-------------------- DOWNLOAD - 2 кнопки з store ------------*/
+.contain_download div {
+    width: 100%;
+    justify-content: space-between;
+}
+
+/*---------------------FOOTER ----------------------------------*/
+.footer {
+    position: relative;
+}
+.foot-contain{
+    position: relative;
+}
+.footer div{
+    position: absolute;
+    top: -20px;
+}
+.foot-contain div {
+    width: 100%;
+}
+.footer_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 2;
+    margin-top: 50px;
+}
+.footer_nav span {
+    display: none;
     }
-    .top-nav {
-        width: 90%;
-        justify-content: space-between;
-        height: 100%;
+.foot-contain div p {
+    text-align: center;
     }
-    .top-nav a {
-        font-size: 14px;
+}
+@media screen and (max-width: 800px){
+
+    /*-------------------------------  Slider------------------------------*/
+.slick-initialized .slick-slide img{
+    /* max-width: 300px; */
+    max-width: 100%;
+}
+
+}
+
+@media screen and (max-width:600px){
+
+    /*--------------------------- HEADER ------------------------*/
+header {
+    width: 100%;
+    height: 200px;  
+}
+.top-nav {
+    max-width: 90%;
+    justify-content: space-between;
+    height: 100%;
+}
+.top-nav a {
+    font-size: 14px;
+}
+.top-nav {
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    line-height: 14px;
+    justify-content: space-evenly;
+}
+.logo {
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+.header.active {
+    height: 65px;
+}
+.header.active .top-nav {
+    margin-top: 0;
+    align-items: flex-end;
+}
+.header.active .top-nav a{
+    font-size: 10px;
+}
+.header.active .top-nav a.logo img{
+    max-width: 35px;
+}
+.header.active .top-nav a.logo {
+    top: 15px;
+
+}
+/*--------------------------------  TOP  -------------------------*/
+.top-center h1 {
+    font-size: 22px;
+}
+/*-------------------------------  SUBSCRIBE ---------------------*/
+.subscribe div h2 {
+    font-size: 14px;
+}
+.user_email {
+    width: 80%;
+}
+
+/*------------------------ DOWNLOAD - 2 кнопки з store -----------*/
+.contain_download div {
+    flex-direction: column;
+    align-items: center;
     }
-    .top-nav {
-        flex-direction: column;
-        align-items: flex-end;
-        position: relative;
-        line-height: 14px;
-        justify-content: space-evenly;
+.contain_download div button {
+    width: 230px;
+    height: 56px;
+    font-size: 16px;
+    margin: 5px 0px 5px;
     }
-    .logo {
-        position: absolute;
-        left: 0;
-        top: 30px;
-        height: 73px;
-        width: 75px;
-    }
-    .logo img {
-        height: 73px;
-        width: 75px;
-    }
-    .footer {
-        position: relative;
-    }
-    .footer img{
-        position: absolute;
-    }
-    .footer-nav span {
-        display: none;
-    }
+.download {
+    height: 440px;
+}
+/*------------------------------- FOOTER --------------------------*/ 
+.footer a{
+    font-size: 12px;  
+  }
 }

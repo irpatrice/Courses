@@ -5,7 +5,7 @@ body, #header, .head_banner, .top_sidebar, #banner, .top_block, .top_center, .to
     display:flex;
 }
 .wrap {
-    width: 1140px; /*70%*/
+    max-width: 1140px; /*70%*/
 }
 .top_block, #header, #bottom_navigation, .top_center, .top_center_left, .center_navigation, .center {
     justify-content: space-between;
