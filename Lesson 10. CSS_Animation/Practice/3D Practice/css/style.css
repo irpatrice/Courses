@@ -1,0 +1,32 @@
+.container {
+    width: 800px;
+    height: 600px;
+    background-color: gainsboro;
+    margin: auto;
+    perspective: 200px;
+    justify-content: center;
+}
+.container, .object {
+    display: flex;
+    align-items: center;
+}
+.object{
+    width: 300px;
+    height: 250px;
+    background-color: rgb(42, 42, 153);
+    border: 1px solid darkblue;
+    transform: rotateY(25deg);
+    justify-content: flex-end;
+    position: relative;
+    perspective: none;
+}
+.centerSpot{
+    transform: initial !important;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    position: absolute;
+    left: 100%;
+    
+
+}
